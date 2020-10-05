@@ -77,9 +77,12 @@ router.put('/:recipeId', (req, res) => {
 
 // ------------------------------ DELETE
 
-// router.delete('/:recipeId', (req, res) => {
-//   res.redirect('recipes/indexRecipes');
-// });
+router.delete('/:recipeId', (req, res) => {
+  db.Recipe.findByIdAndDelete(req.params.recipeId, (err, recipeToDelete) => {
+    if (err) return console.log(err);
+    res.redirect('/recipes/indexRecipes');
+  })
+});
 
 
 
