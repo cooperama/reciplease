@@ -16,6 +16,26 @@ router.get('/', (req, res) => {
 });
 
 
+
+// ------------------------------ NEW
+
+router.get('/new', (req, res) => {
+  res.render('recipes/newRecipes');
+});
+
+
+
+// ------------------------------ CREATE
+
+router.post('/', (req, res) => {
+  db.Recipe.create(req.body, (err, newRecipe) => {
+    if (err) return console.log(err);
+    res.redirect(`recipes/${newRecipe._id}`);
+  })
+})
+
+
+
 // ------------------------------ SHOW
 
 router.get('/:recipeId', (req, res) => {
@@ -27,22 +47,6 @@ router.get('/:recipeId', (req, res) => {
   })
 });
 
-
-// ------------------------------ NEW
-
-router.get('/new', (req, res) => {
-  res.render('recipes/newRecipes');
-});
-
-
-// ------------------------------ CREATE
-
-router.post('/:recipeId', (req, res) => {
-  db.Recipe.create(req.body, (err, newRecipe) => {
-    if (err) return console.log(err);
-    res.redirect(`recipes/${newRecipe._id}`);
-  })
-})
 
 
 // ------------------------------ EDIT

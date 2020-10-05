@@ -12,16 +12,20 @@
 
   <div class="recipe-card">
     <div class="time">
+      <h4>Time:</h4>
       <p><%= recipe.time %></p>
     </div>
     <div class="ingredients">
-      <ul>
+      <h4>Ingredients:</h4>
+      <p><%= recipe.ingredients %> </p>
+      <!-- <ul>
         <% for( let i = 0; i < recipe.ingredients.length; i++ ) { %>
-        <li><%= recipe.ingredients[i] %> </li>
-        <% } %>
-      </ul>
-    </div>
+          <li><%= recipe.ingredients[i] %> </li>
+          <% } %>
+        </ul> -->
+      </div>
     <div class="directions">
+      <h4>Directions:</h4>
       <p><%= recipe.directions %> </p>
     </div>
   </div>
