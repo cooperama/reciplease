@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Recipe</title>
+</head>
+<body>
+  <%- include('../partials/navbar') %> 
+
+  <h1>New Recipe</h1>
+
+  <form action="/recipes" method="POST">
+    <div>
+      <label for="name">Name</label>
+      <input type="text" id="name">
+    </div>
+    <div>
+      <label for="time">Time</label>
+      <input type="number" id="time">
+    </div>
+    <div>
+      <label for="ingredients">Ingredients</label>
+      <input type="text" id="ingredients">
+      <button class="add-ingredient">Add Ingredient</button>
+    </div>
+    <div>
+      <label for="directions">Directions</label>
+      <input type="textarea" id="directions">
+    </div>
+    <div>
+      <input type="submit" value="Add Recipe">
+    </div>
+  </form>
+
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Recipes</title>
+</head>
+<body>
+  <%- include('../partials/navbar') %> 
+
+  <h1>All Recipes</h1>
+
+  <div class="recipes-list">
+    <ul>
+      <% for( let i = 0; i < recipes.length; i++ ) { %>
+        <li><%= recipes[i].name %></li>
+      <% } %>
+    </ul>
+  </div>
+
+</body>
+</html>
