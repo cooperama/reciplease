@@ -51,16 +51,28 @@ router.get('/:recipeId', (req, res) => {
 
 // ------------------------------ EDIT
 
-// router.get('/:recipeId/edit', (req, res) => {
-//   res.render('recipes/editRecipes');
-// });
+router.get('/:recipeId/edit', (req, res) => {
+  db.Recipe.findById(req.params.recipeId, (err, recipeToEdit) => {
+    if (err) return console.log(err);
+    res.render('recipes/editRecipes', {
+      recipe: recipeToEdit
+    });
+  })
+});
 
 
 // ------------------------------ UPDATE
 
-// router.put('/:recipeId', (req, res) => {
-//   res.redirect('recipes/showRecipes');
-// });
+router.put('/:recipeId', (req, res) => {
+  db.Recipe.findByIdAndUpdate(
+    req.params.recipeId, 
+    req.body,
+    {new: true},
+    (err, updatedRecipe) => {
+    if (err) return console.log(err);
+    res.redirect(`/recipes/${updatedRecipe._id}`);
+  })
+});
 
 
 // ------------------------------ DELETE

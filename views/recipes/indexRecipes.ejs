@@ -13,7 +13,7 @@
   <div class="recipes-list">
     <ul>
       <% for( let i = 0; i < recipes.length; i++ ) { %>
-        <li><%= recipes[i].name %></li>
+        <li><a href="/recipes/<%= recipes[i]._id %>"><%= recipes[i].name %></a></li>
       <% } %>
     </ul>
   </div>

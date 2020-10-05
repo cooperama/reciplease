@@ -10,6 +10,10 @@
 
   <h1><%= recipe.name %></h1>
 
+  <div class="recipe-image">
+    <img src="<%= recipe.image %>" alt="">
+  </div>
+
   <div class="recipe-card">
     <div class="time">
       <h4>Time:</h4>
@@ -20,7 +24,7 @@
       <p><%= recipe.ingredients %> </p>
       <!-- <ul>
         <% for( let i = 0; i < recipe.ingredients.length; i++ ) { %>
-          <li><%= recipe.ingredients[i] %> </li>
+          <li><%= recipe.ingredients[i] %></li>
           <% } %>
         </ul> -->
       </div>
