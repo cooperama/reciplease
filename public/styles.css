@@ -1,20 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
 footer {
   width: 100vw;
   height: 50px;
   position: fixed;
   bottom: 0;
+  left: 0;
   background: rgb(238, 238, 238);
   padding: 10px;
+  text-align: center;
 }
 
-.carousel img {
-  height: 90%;
-}
-
-img {
-  height: 300px;
+footer a {
+  padding-left: 10px;
 }
 
 .carousel-container {
   background: rgb(43, 39, 39);
+  height: 50%;
+}
+
+.w-100 {
+  width: 100% !important;
+  height: 50vh;
+}
+
+
+
+li {
+  list-style: none;
 }
