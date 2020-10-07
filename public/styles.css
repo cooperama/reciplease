@@ -54,7 +54,6 @@ footer a {
 
 .carousel-container {
   height: 50%;
-  /* width: 100%; */
   background-color: rgba(0, 0, 0, 0.459);
 }
 
@@ -135,4 +134,47 @@ textarea {
 .row {
   padding-bottom: 10px;
 }
+
+/* ************************ Show Page */
+
+.recipe-image-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.recipe-image {
+  width: 500px;
+  box-shadow: 0 0 1px black;
+  margin-bottom: 20px;
+}
+
+.recipe-card {
+  color: white;
+  width: 800px;
+  background-color: rgba(0, 0, 0, 0.459);
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.recipe-name {
+  color: white;
+  text-shadow: 0 0 3px black;
+}
+
+form {
+  display: inline;
+}
+
+.delete-edit-buttons {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ************************ Edit Page */
+
+
 
