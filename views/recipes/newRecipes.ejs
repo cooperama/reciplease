@@ -1,34 +1,39 @@
 
   <%- include('../partials/navbar') %> 
 
-  <h1>New Recipe</h1>
 
+  <div class="container new-recipes">
+  <h1>New Recipe</h1>
+  
   <form action="/recipes" method="POST">
-    <div>
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name">
+    <div class="row">
+      <div class="col">
+        <input type="text" id="name" name="name" placeholder="Recipe Name">
+      </div>
+      <div class="col">
+        <input type="text" id="image" name="image" placeholder="Image URL">
+      </div>
+      <div class="col">
+        <input type="number" id="time" name="time" placeholder="Minutes to Prepare">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <textarea cols="80" rows="3" id="ingredients" name='ingredients' placeholder="Ingredients"></textarea>
+      </div>
     </div>
     <div>
-      <label for="image">Image</label>
-      <input type="text" id="image" name="image">
+      <div class="col">
+        <textarea cols="80" rows="10" id="directions" name='directions' placeholder="Directions"></textarea>
+      </div>
     </div>
-    <div>
-      <label for="time">Time</label>
-      <input type="number" id="time" name="time">
-    </div>
-    <div>
-      <label for="ingredients">Ingredients</label>
-      <input type="text" id="ingredients" name="ingredients">
-      <button class="add-ingredient">Add Ingredient</button>
-    </div>
-    <div>
-      <label for="directions">Directions</label>
-      <textarea cols="80" rows="10" id="directions" name='directions'></textarea>
-    </div>
-    <div>
-      <input type="submit" value="Add Recipe">
+    <div class="row">
+      <div class="col">
+        <input type="submit" value="Add Recipe">
+      </div>
     </div>
   </form>
-
-
+</div>
+  
+  
   <%- include('../partials/footer') %> 

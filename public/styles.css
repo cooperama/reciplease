@@ -33,8 +33,39 @@ footer a {
   height: 50vh;
 }
 
+h1 {
+  text-align: center;
+  margin: 10px;
+}
 
+form {
+  text-align: center;
+}
+
+.new-recipes {
+  background: url('https://goodlifecookin.com/wp-content/uploads/2017/08/shutterstock_427193734.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+.new-recipes h1 {
+  color: white;
+  text-shadow: 0 0 3px black;
+  margin-bottom: 40px;
+}
+
+.recipes-list {
+  margin-top: 50px;
+}
 
 li {
   list-style: none;
 }
+
+.row {
+  padding-bottom: 10px;
+}
+
