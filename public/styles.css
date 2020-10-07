@@ -1,19 +1,29 @@
+/* ************************ Layout */
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
   height: 100vh;
   width: 100vw;
+  background: url('https://images.unsplash.com/photo-1555505019-8c3f1c4aba5f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .navbar {
-  background-color: rgb(156, 65, 13);
+  background-color: #3E5902;
+  padding: 10px 20px;
 }
 
 .navbar a {
   color: white;
+}
+
+.dropdown-menu {
+  background-color: #3E5902;
 }
 
 footer {
@@ -22,7 +32,7 @@ footer {
   position: fixed;
   bottom: 0;
   left: 0;
-  background-color: rgb(156, 65, 13);
+  background-color: #3E5902;
   padding: 10px;
   text-align: center;
 }
@@ -32,18 +42,28 @@ footer a {
   color: white;
 }
 
+/* ************************ Landing Page */
+
 .jumbotron {
-  background-color: rgb(216, 100, 65);
+  background-color: rgba(0, 0, 0, 0.459);
   color: white;
 }
 
+
+/* ************************ Index Page */
+
 .carousel-container {
-  background: rgb(43, 39, 39);
   height: 50%;
+  /* width: 100%; */
+  background-color: rgba(0, 0, 0, 0.459);
+}
+
+.carousel-container img {
+  border: 2px solid rgba(0, 0, 0, 0.685);
+  width: 300px;
 }
 
 .w-100 {
-  width: 100% !important;
   height: 50vh;
 }
 
@@ -52,32 +72,65 @@ h1 {
   margin: 10px;
 }
 
-form {
-  text-align: center;
-}
-
-.new-recipes {
-  background: url('https://goodlifecookin.com/wp-content/uploads/2017/08/shutterstock_427193734.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: 100vw;
-}
-
-
-.new-recipes h1 {
-  color: white;
-  text-shadow: 0 0 3px black;
-  margin-bottom: 40px;
-}
-
 .recipes-list {
-  margin-top: 50px;
+  margin: 50px auto;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0 0 5px #3E5902;
+  padding: 20px;
+  width: 300px;
+}
+
+.recipes-list a {
+  color: black;
+}
+
+.recipes-list a:hover {
+  color: #3E5902;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 li {
   list-style: none;
 }
+
+/* ************************ New Page */
+
+form {
+  text-align: center;
+}
+
+form input,
+textarea {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#image,
+#time {
+  width: 185px;
+}
+
+#name {
+  width: 300px;
+}
+
+.new-recipes {
+  margin-top: 50px;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.459);
+  width: 800px;
+  border-radius: 5px;
+}
+
+.new-recipes h1 {
+  margin-bottom: 40px;
+  color: white;
+  text-shadow: 0 0 3px black;
+}
+
+
 
 .row {
   padding-bottom: 10px;
