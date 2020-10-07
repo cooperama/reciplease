@@ -1,0 +1,20 @@
+footer {
+  width: 100vw;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  background: rgb(238, 238, 238);
+  padding: 10px;
+}
+
+.carousel img {
+  height: 90%;
+}
+
+img {
+  height: 300px;
+}
+
+.carousel-container {
+  background: rgb(43, 39, 39);
+}

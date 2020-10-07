@@ -1,18 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recipes</title>
-</head>
-<body>
 
-  <h1>Reciplease</h1>
+<%- include('./partials/navbar') %> 
 
-  <form action="/recipes" method="GET">
-    <input type="text" placeholder="name">
-    <input type="submit" value="Enter">
-  </form>
 
-</body>
-</html>
+  <div class="jumbotron container">
+    <h1 class="display-4">Reciplease!</h1>
+    <p class="lead">Get recipes, get inspired, get hungry</p>
+    <hr class="my-4">
+    <p>Browse and keep track of all your favorite recipes in the virtual cookbook that's sweeping the nation.</p>
+    <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+
+      <form action="/recipes" method="GET" class="col-6">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Keep me signed in</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in </button>
+        <button type="submit" class="btn btn-success">Sign up</button>
+      </form>
+      
+    </div>
+  </div>
+  <%- include('./partials/footer') %> 
