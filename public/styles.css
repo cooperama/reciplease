@@ -8,19 +8,33 @@ body {
   width: 100vw;
 }
 
+.navbar {
+  background-color: rgb(156, 65, 13);
+}
+
+.navbar a {
+  color: white;
+}
+
 footer {
   width: 100vw;
   height: 50px;
   position: fixed;
   bottom: 0;
   left: 0;
-  background: rgb(238, 238, 238);
+  background-color: rgb(156, 65, 13);
   padding: 10px;
   text-align: center;
 }
 
 footer a {
   padding-left: 10px;
+  color: white;
+}
+
+.jumbotron {
+  background-color: rgb(216, 100, 65);
+  color: white;
 }
 
 .carousel-container {
