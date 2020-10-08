@@ -1,39 +1,47 @@
 
   <%- include('../partials/navbar') %> 
 
+  <div class="edit-page">
+    <img src="<%= recipe.image %>" alt="<%= recipe.name %>">
+  
+
   <h1>Edit Recipe</h1>
 
-  <div class="recipe-image">
-    <img src="<%= recipe.image %>" alt="<%= recipe.name %>">
-  </div>
 
+  <div class="edit-recipe">
+
+  
   <form action="/recipes/<%= recipe._id %>?_method=PUT " method="POST">
-    <div>
-      <label for="name">Name</label>
+    <div class="row">
+      <div class="col">
       <input type="text" id="name" name="name" value="<%= recipe.name %>">
     </div>
-    <div>
-      <label for="image">Image</label>
+  </div>
+  <div class="row">
+    <div class="col">
       <input type="text" id="image" name="image" value="<%= recipe.image %>">
     </div>
-    <div>
-      <label for="time">Time</label>
+    <div class="col">
       <input type="number" id="time" name="time" value="<%= recipe.time %>">
     </div>
-    <div>
-      <label for="ingredients">Ingredients</label>
-      <input type="text" id="ingredients" name="ingredients" value="<%= recipe.ingredients %>">
-      <button class="add-ingredient">Add Ingredient</button>
+  </div>
+  <div class="row">
+    <div class="col">
+      <textarea cols="63" rows="2" id="ingredients" name='ingredients' placeholder="Ingredients"><%= recipe.ingredients %></textarea>
     </div>
-    <div>
-      <label for="directions">Directions</label>
-      <textarea cols="80" rows="10" id="directions" name='directions'><%= recipe.directions %></textarea>
+  </div>
+  <div>
+    <div class="col">
+      <textarea cols="63" rows="8" id="directions" name='directions'><%= recipe.directions %></textarea>
     </div>
-    <div>
+  </div>
+  <div class="row">
+    <div class="col">
       <input type="submit" value="Edit Recipe">
-    </div>
+    </div> 
+  </div>
   </form>
 
-
-
+</div>
+</div>
   <%- include('../partials/footer') %> 

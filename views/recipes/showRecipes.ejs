@@ -38,11 +38,11 @@
 <div class="delete-edit-buttons">
 
   <form action="/recipes/<%= recipe._id %>/edit " method="GET">
-    <input type="submit" value="Edit Recipe">
+    <input class="btn btn-success" type="submit" value="Edit Recipe">
   </form>
   
   <form action="/recipes/<%= recipe._id %>?_method=DELETE " method="POST">
-    <input type="submit" value="Delete Recipe">
+    <input class="btn btn-warning" type="submit" value="Delete Recipe">
   </form>
   
 </div>

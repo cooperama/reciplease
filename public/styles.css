@@ -96,16 +96,15 @@ footer a:hover {
 
 .carousel-container {
   position: absolute;
-  height: 50%;
-  background-color: rgba(0, 0, 0, 0.459);
-  width: 600px;
-  height: 100%;
-  right: 0;
+  width: 800px;
+  height: 60vh;
+  right: 5%;
+  top: 15%;
 }
 
 .carousel-container img {
   border: 2px solid rgba(0, 0, 0, 0.685);
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 .w-100 {
@@ -119,9 +118,6 @@ h1 {
 
 .recipes-list {
   margin: 50px auto;
-  background: rgb(255, 255, 255);
-  border-radius: 5px;
-  box-shadow: 0 0 5px #3E5902;
   padding: 20px;
   width: 300px;
   position: absolute;
@@ -129,7 +125,12 @@ h1 {
 }
 
 .recipes-list a {
-  color: black;
+  color: white;
+}
+
+.recipes-list li {
+  padding: 10px;
+  font-size: 20px;
 }
 
 .recipes-list a:hover {
@@ -191,7 +192,7 @@ textarea {
 
 .recipe-image {
   width: 600px;
-  /* height: 100%; */
+  max-height: 500px;
   box-shadow: 0 0 1px black;
   margin-bottom: 20px;
   border-radius: 5px;
@@ -211,11 +212,11 @@ textarea {
 .recipe-container {
   display: flex;
   flex-direction: row-reverse;
-  /* background: red; */
   margin-left: 200px;
   width: 80%;
   position: absolute;
   right: 60px;
+  height: 500px;
 }
 
 .recipe-name {
@@ -229,11 +230,30 @@ form {
 
 .delete-edit-buttons {
   position: absolute;
-  bottom: 60px;
+  top: 70px;
   right: 30px;
 }
 
 /* ************************ Edit Page */
 
 
+.edit-page img {
+  position: absolute;
+  right: 15px;
+  top: 18%;
+}
 
+.edit-page h1 {
+  color: white;
+  text-shadow: 0 0 3px black;
+}
+
+.edit-recipe {
+  margin-top: 15px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.459);
+  width: 700px;
+  border-radius: 5px;
+  position: relative;
+  left: 175px;
+}
