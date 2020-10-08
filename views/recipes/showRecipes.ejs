@@ -2,41 +2,48 @@
   <%- include('../partials/navbar') %> 
 
   <h1 class="recipe-name"><%= recipe.name %></h1>
-
+<div class="recipe-container">
+  
   <div class="recipe-image-div">
     <img src="<%= recipe.image %>" alt="<%= recipe.name %> " class="recipe-image" />
   </div>
-
-  <div class="recipe-card">
-    <div class="time">
-      <h4>Time to Prepare:</h4>
-      <p><%= recipe.time %> minutes</p>
-    </div>
-    <div class="ingredients">
-      <h4>Ingredients:</h4>
-      <p><%= recipe.ingredients %> </p>
-      <!-- <ul>
-        <% for( let i = 0; i < recipe.ingredients.length; i++ ) { %>
-          <li><%= recipe.ingredients[i] %></li>
-          <% } %>
-        </ul> -->
+  <div>
+    
+    <div class="recipe-card">
+      <div class="time">
+        <h4>Time to Prepare:</h4>
+        <p><%= recipe.time %> minutes</p>
       </div>
-    <div class="directions">
-      <h4>Directions:</h4>
-      <p><%= recipe.directions %> </p>
+      <div class="ingredients">
+        <h4>Ingredients:</h4>
+        <p><%= recipe.ingredients %> </p>
+        <!-- <ul>
+          <% for( let i = 0; i < recipe.ingredients.length; i++ ) { %>
+            <li><%= recipe.ingredients[i] %></li>
+            <% } %>
+          </ul> -->
+        </div>
+      <div class="directions">
+        <h4>Directions:</h4>
+        <p><%= recipe.directions %> </p>
+      </div>
     </div>
-  </div>
 
-  <div class="delete-edit-buttons">
 
-    <form action="/recipes/<%= recipe._id %>/edit " method="GET">
-      <input type="submit" value="Edit Recipe">
-    </form>
-    
-    <form action="/recipes/<%= recipe._id %>?_method=DELETE " method="POST">
-      <input type="submit" value="Delete Recipe">
-    </form>
     
   </div>
+
+</div>
+
+<div class="delete-edit-buttons">
+
+  <form action="/recipes/<%= recipe._id %>/edit " method="GET">
+    <input type="submit" value="Edit Recipe">
+  </form>
   
+  <form action="/recipes/<%= recipe._id %>?_method=DELETE " method="POST">
+    <input type="submit" value="Delete Recipe">
+  </form>
+  
+</div>
   <%- include('../partials/footer') %> 
