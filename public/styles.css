@@ -42,7 +42,7 @@ aside a:hover {
 }
 
 footer {
-  width: 100vw;
+  width: 100%;
   height: 50px;
   position: fixed;
   bottom: 0;
@@ -69,6 +69,7 @@ footer a:hover {
   color: white;
   padding: 50px 90px;
   margin-top: 10px;
+  margin-left: 215px;
 }
 
 .btn-warning {
@@ -108,7 +109,7 @@ footer a:hover {
 }
 
 .w-100 {
-  height: 50vh;
+  height: 60vh;
 }
 
 h1 {
@@ -126,6 +127,7 @@ h1 {
 
 .recipes-list a {
   color: white;
+  text-shadow: 0 0 3px black;
 }
 
 .recipes-list li {
@@ -257,3 +259,4 @@ form {
   position: relative;
   left: 175px;
 }
+
